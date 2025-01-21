@@ -3,6 +3,7 @@ import styles from "../styles/home.module.css";
 import Image from "next/image";
 
 import heroImg from "../../public/hero.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <h1 className={styles.title}>
         Sistema feito para Organizar seu dia dia
         <br />
-        <span>Tarefa + </span>
+        <Link href="/dashboard">
+          <span>Tarefa + </span>
+        </Link>
       </h1>
 
       <div className={styles.logoContent}>
