@@ -1,3 +1,4 @@
+import { Header } from "@/components/header";
 import type { Metadata } from "next";
 // import styles from "../styles/globals.module.css";
 // import Image from "next/image";
@@ -14,6 +15,7 @@ export default function RootLayout({ children, }: Readonly<{
   return (
     <html lang="pt-BR">
       <body className="">
+        <Header />
         {children}
       </body>
     </html>
